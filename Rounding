@@ -1,0 +1,7 @@
+#数字の桁数を取得する
+import math
+x=input("any number:")
+digit=floor(math.log10(abs(x)))+1
+#n桁に丸める
+def round_to_n(n):
+    return round(x, -digit+n)
